@@ -18,3 +18,15 @@ def about():
 def contact():
     title = "Contact"
     return render_template("Contact.html", title=title)
+
+
+@app.route("/projects")
+def projects():
+    title = "Projects"
+    return render_template("Projects.html", title=title)
+
+
+@app.route("/stack")
+def stack():
+    title = "Stack"
+    return render_template("Stack.html", title=title)
