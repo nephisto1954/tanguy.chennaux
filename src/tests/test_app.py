@@ -1,6 +1,5 @@
-# import app
-# import pytest
+from src import routes
 
 
-# def test_homepage():
-#     assert homepage() == "Hello, TG!"
+def test_homepage():
+    assert routes.homepage() == "Hello, TG!"
