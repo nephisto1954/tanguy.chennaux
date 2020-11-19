@@ -6,16 +6,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="{{ url_for(src.routes.homepage)}}">Home</a>
-            <a class="nav-link" href="{{ url_for(about)}}">About</a>
-            <a class="nav-link" href="{{ url_for(contact)}}">Contact</a>
+            <a class="nav-link active" aria-current="page" href="{{ url_for("homepage")}}">Home</a>
+            <a class="nav-link" href="{{ url_for("about")}}">About</a>
+            <a class="nav-link" href="{{ url_for("contact")}}">Contact</a>
             </div>
             <ul class="navbar-nav justify-content-end">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{{ url_for(projects)}}">Projects</a>
+                  <a class="nav-link active" aria-current="page" href="{{ url_for("projects")}}">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for(stack)}}">Stack</a>
+                  <a class="nav-link" href="{{ url_for("stack")}}">Stack</a>
                 </li>
             </ul>
         </div>
