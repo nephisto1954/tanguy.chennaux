@@ -3,6 +3,7 @@ from src import app
 
 
 @app.route("/")
+@app.route("/home")
 def homepage():
     title = "Homepage"
     return render_template("Homepage.html", title=title)
