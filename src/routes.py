@@ -43,14 +43,14 @@ def new():
         return render_template("New.html", title=title)
 
 
-@app.route("/projects/<project_name>")
-def projects(project_name):
-    project = Project.query.filter_by(name=project_name).first()
+# @app.route("/projects/<project_name>")
+# def projects(project_name):
+#     project = Project.query.filter_by(name=project_name).first()
 
-    if project is None:
-        return "No project found"
-    else:
-        return project.description
+#     if project is None:
+#         return "No project found"
+#     else:
+#         return project.description
 
 
 @app.route("/stack")
