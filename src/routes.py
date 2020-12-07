@@ -22,7 +22,7 @@ def contact():
 
 
 @app.route("/projects")
-def all_projects():
+def projects():
     title = "Projects"
     return render_template("Projects.html", title=title)
 
