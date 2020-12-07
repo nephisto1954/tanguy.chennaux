@@ -22,4 +22,4 @@ class Project(db.Model):
     link = db.Column(db.String, unique=True)
 
 
-db.init_app()
+db.init_app(app)
