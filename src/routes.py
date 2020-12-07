@@ -27,7 +27,7 @@ def projects():
     return render_template("Projects.html", title=title)
 
 
-@app.route("/projects/new", methods=["get", "post"])
+@app.route("/projects/new", methods=["GET", "POST"])
 def new():
 
     title = "Add a new project"
