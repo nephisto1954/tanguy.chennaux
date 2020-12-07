@@ -10,7 +10,7 @@ app.config["SECRET_KEY"] = "secret"
 app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
 
 # initialise db
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 
 
 class Project(db.Model):
@@ -25,4 +25,4 @@ class Project(db.Model):
         return "<Project %r>" % self.name
 
 
-db.init_app()
+db.init_app(app)
