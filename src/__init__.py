@@ -21,5 +21,8 @@ class Project(db.Model):
     description = db.Column(db.String, unique=True)
     link = db.Column(db.String, unique=True)
 
+    def __repr__(self):
+        return "<Project %r>" % self.name
+
 
 db.init_app()
